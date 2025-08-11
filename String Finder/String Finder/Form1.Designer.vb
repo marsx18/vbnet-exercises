@@ -42,10 +42,10 @@ Partial Class Form1
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(31, 31)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Location = New System.Drawing.Point(41, 38)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(106, 17)
+        Me.Label8.Size = New System.Drawing.Size(126, 20)
         Me.Label8.TabIndex = 54
         Me.Label8.Text = "Index Numbers:"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -54,10 +54,10 @@ Partial Class Form1
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(441, 49)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Location = New System.Drawing.Point(588, 60)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(26, 17)
+        Me.Label7.Size = New System.Drawing.Size(29, 20)
         Me.Label7.TabIndex = 53
         Me.Label7.Text = "30"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -66,10 +66,10 @@ Partial Class Form1
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(341, 49)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Location = New System.Drawing.Point(455, 60)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(26, 17)
+        Me.Label6.Size = New System.Drawing.Size(29, 20)
         Me.Label6.TabIndex = 52
         Me.Label6.Text = "20"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -78,10 +78,10 @@ Partial Class Form1
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(240, 49)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(320, 60)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(26, 17)
+        Me.Label5.Size = New System.Drawing.Size(29, 20)
         Me.Label5.TabIndex = 51
         Me.Label5.Text = "10"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -90,10 +90,10 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(53, 121)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(71, 149)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(157, 17)
+        Me.Label2.Size = New System.Drawing.Size(186, 20)
         Me.Label2.TabIndex = 50
         Me.Label2.Text = "Start searching at index"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -101,28 +101,30 @@ Partial Class Form1
         'txtStartIndex
         '
         Me.txtStartIndex.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtStartIndex.Location = New System.Drawing.Point(218, 118)
+        Me.txtStartIndex.Location = New System.Drawing.Point(291, 145)
+        Me.txtStartIndex.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtStartIndex.Name = "txtStartIndex"
-        Me.txtStartIndex.Size = New System.Drawing.Size(35, 22)
+        Me.txtStartIndex.Size = New System.Drawing.Size(45, 26)
         Me.txtStartIndex.TabIndex = 42
         Me.txtStartIndex.Text = "0"
         '
         'btnClose
         '
         Me.btnClose.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClose.Location = New System.Drawing.Point(216, 201)
+        Me.btnClose.Location = New System.Drawing.Point(288, 247)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(62, 23)
+        Me.btnClose.Size = New System.Drawing.Size(83, 28)
         Me.btnClose.TabIndex = 44
         Me.btnClose.Text = "Close"
         '
         'Label4
         '
         Me.Label4.Font = New System.Drawing.Font("Courier New", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(145, 31)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(193, 38)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(336, 18)
+        Me.Label4.Size = New System.Drawing.Size(448, 22)
         Me.Label4.TabIndex = 49
         Me.Label4.Text = "012345678901234567890123456789012"
         '
@@ -130,19 +132,20 @@ Partial Class Form1
         '
         Me.lblResults.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblResults.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblResults.Location = New System.Drawing.Point(41, 158)
-        Me.lblResults.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblResults.Location = New System.Drawing.Point(55, 194)
+        Me.lblResults.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblResults.Name = "lblResults"
-        Me.lblResults.Size = New System.Drawing.Size(411, 22)
+        Me.lblResults.Size = New System.Drawing.Size(548, 27)
         Me.lblResults.TabIndex = 48
         Me.lblResults.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'btnGo
         '
         Me.btnGo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGo.Location = New System.Drawing.Point(259, 115)
+        Me.btnGo.Location = New System.Drawing.Point(345, 142)
+        Me.btnGo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnGo.Name = "btnGo"
-        Me.btnGo.Size = New System.Drawing.Size(62, 27)
+        Me.btnGo.Size = New System.Drawing.Size(83, 33)
         Me.btnGo.TabIndex = 43
         Me.btnGo.Text = "Go"
         '
@@ -150,10 +153,10 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(95, 90)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(127, 111)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(115, 17)
+        Me.Label3.Size = New System.Drawing.Size(136, 20)
         Me.Label3.TabIndex = 47
         Me.Label3.Text = "Substring to find:"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -161,9 +164,10 @@ Partial Class Form1
         'txtToFind
         '
         Me.txtToFind.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtToFind.Location = New System.Drawing.Point(218, 87)
+        Me.txtToFind.Location = New System.Drawing.Point(291, 107)
+        Me.txtToFind.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtToFind.Name = "txtToFind"
-        Me.txtToFind.Size = New System.Drawing.Size(102, 22)
+        Me.txtToFind.Size = New System.Drawing.Size(135, 26)
         Me.txtToFind.TabIndex = 41
         '
         'lblString
@@ -171,9 +175,10 @@ Partial Class Form1
         Me.lblString.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblString.Font = New System.Drawing.Font("Courier New", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblString.ForeColor = System.Drawing.Color.Blue
-        Me.lblString.Location = New System.Drawing.Point(144, 11)
+        Me.lblString.Location = New System.Drawing.Point(192, 14)
+        Me.lblString.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblString.Name = "lblString"
-        Me.lblString.Size = New System.Drawing.Size(337, 20)
+        Me.lblString.Size = New System.Drawing.Size(449, 25)
         Me.lblString.TabIndex = 46
         Me.lblString.Text = "abcABC00123573@ 123 ABC 98ABC123"
         '
@@ -181,19 +186,19 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(13, 11)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(17, 14)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(124, 17)
+        Me.Label1.Size = New System.Drawing.Size(148, 20)
         Me.Label1.TabIndex = 45
         Me.Label1.Text = "Search this String:"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(494, 234)
+        Me.ClientSize = New System.Drawing.Size(659, 288)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
@@ -208,6 +213,7 @@ Partial Class Form1
         Me.Controls.Add(Me.txtToFind)
         Me.Controls.Add(Me.lblString)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Form1"
         Me.Text = "String Finder"
         Me.ResumeLayout(False)
