@@ -13,7 +13,7 @@
 
     Private Sub btnFifteen_Click(sender As Object, e As EventArgs) Handles btnFifteen.Click
         'Variable Declaration.
-        Dim dblBill As Double = 0.0
+        Dim dblBill As Double = 0.0 'aaaaaaaa
         Dim dblTip As Double = 0.0
 
         'Get the amount of the bil.
