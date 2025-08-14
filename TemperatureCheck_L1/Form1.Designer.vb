@@ -23,9 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.txtTemperature = New System.Windows.Forms.TextBox()
-        Me.lblCategory = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.btnCheck = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
@@ -33,42 +31,25 @@ Partial Class Form1
         '
         'txtTemperature
         '
-        Me.txtTemperature.Location = New System.Drawing.Point(285, 109)
+        Me.txtTemperature.Location = New System.Drawing.Point(307, 188)
         Me.txtTemperature.Multiline = True
         Me.txtTemperature.Name = "txtTemperature"
-        Me.txtTemperature.Size = New System.Drawing.Size(171, 35)
+        Me.txtTemperature.Size = New System.Drawing.Size(204, 43)
         Me.txtTemperature.TabIndex = 0
-        '
-        'lblCategory
-        '
-        Me.lblCategory.Location = New System.Drawing.Point(285, 200)
-        Me.lblCategory.Multiline = True
-        Me.lblCategory.Name = "lblCategory"
-        Me.lblCategory.ReadOnly = True
-        Me.lblCategory.Size = New System.Drawing.Size(171, 35)
-        Me.lblCategory.TabIndex = 1
+        Me.txtTemperature.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(116, 112)
+        Me.Label1.Location = New System.Drawing.Point(127, 201)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(145, 16)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Enter your temperature:"
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(196, 203)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(65, 16)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Category:"
-        '
         'btnCheck
         '
-        Me.btnCheck.Location = New System.Drawing.Point(151, 345)
+        Me.btnCheck.Location = New System.Drawing.Point(151, 263)
         Me.btnCheck.Name = "btnCheck"
         Me.btnCheck.Size = New System.Drawing.Size(142, 53)
         Me.btnCheck.TabIndex = 4
@@ -77,7 +58,7 @@ Partial Class Form1
         '
         'btnClear
         '
-        Me.btnClear.Location = New System.Drawing.Point(330, 345)
+        Me.btnClear.Location = New System.Drawing.Point(323, 263)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(142, 53)
         Me.btnClear.TabIndex = 5
@@ -86,7 +67,7 @@ Partial Class Form1
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(506, 345)
+        Me.btnExit.Location = New System.Drawing.Point(498, 263)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(142, 53)
         Me.btnExit.TabIndex = 6
@@ -101,9 +82,7 @@ Partial Class Form1
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnCheck)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.lblCategory)
         Me.Controls.Add(Me.txtTemperature)
         Me.Name = "Form1"
         Me.Text = "Temperature Checker"
@@ -113,9 +92,7 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents txtTemperature As TextBox
-    Friend WithEvents lblCategory As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents btnCheck As Button
     Friend WithEvents btnClear As Button
     Friend WithEvents btnExit As Button
