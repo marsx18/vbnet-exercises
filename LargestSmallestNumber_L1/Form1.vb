@@ -6,31 +6,27 @@
             'Find the second number in the text box
             Dim secondNumber As Double
             If Double.TryParse(txtSecondNumber.Text, secondNumber) Then
-                'Find the smallest number
+                'Find the smallest and largest numbers
                 Dim smallestNumber As Double = Math.Min(firstNumber, secondNumber)
-                'Find the largest number
                 Dim largestNumber As Double = Math.Max(firstNumber, secondNumber)
-                'Display the results
-                lblSmallestNumber.Text = smallestNumber.ToString()
-                lblLargestNumber.Text = largestNumber.ToString()
+
+                'Display the results in a MessageBox
+                MessageBox.Show("The smallest number is: " & smallestNumber.ToString() & Environment.NewLine &
+                                "The largest number is: " & largestNumber.ToString(), "Results", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
             Else
                 MessageBox.Show("Please enter a valid second number.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         Else
             MessageBox.Show("Please enter a valid first number.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
-
-
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
-        'Clear the text boxes and labels
+        'Clear the text boxes
         txtFirstNumber.Clear()
-        txtFirstNumber.Focus()
         txtSecondNumber.Clear()
-        lblSmallestNumber.Text = String.Empty
-        lblLargestNumber.Text = String.Empty
-
+        txtFirstNumber.Focus()
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click

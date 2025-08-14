@@ -26,12 +26,8 @@ Partial Class Form1
         Me.txtSecondNumber = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.lblSmallestNumber = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.lblLargestNumber = New System.Windows.Forms.TextBox()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -71,28 +67,9 @@ Partial Class Form1
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Enter second number:"
         '
-        'lblSmallestNumber
-        '
-        Me.lblSmallestNumber.Location = New System.Drawing.Point(307, 232)
-        Me.lblSmallestNumber.Multiline = True
-        Me.lblSmallestNumber.Name = "lblSmallestNumber"
-        Me.lblSmallestNumber.ReadOnly = True
-        Me.lblSmallestNumber.Size = New System.Drawing.Size(161, 32)
-        Me.lblSmallestNumber.TabIndex = 4
-        Me.lblSmallestNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(177, 235)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(110, 16)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "Smallest number:"
-        '
         'btnCalculate
         '
-        Me.btnCalculate.Location = New System.Drawing.Point(572, 66)
+        Me.btnCalculate.Location = New System.Drawing.Point(139, 264)
         Me.btnCalculate.Name = "btnCalculate"
         Me.btnCalculate.Size = New System.Drawing.Size(148, 65)
         Me.btnCalculate.TabIndex = 6
@@ -101,35 +78,16 @@ Partial Class Form1
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(572, 264)
+        Me.btnExit.Location = New System.Drawing.Point(497, 264)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(148, 65)
         Me.btnExit.TabIndex = 7
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(175, 300)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(106, 16)
-        Me.Label4.TabIndex = 8
-        Me.Label4.Text = "Largest Number:"
-        '
-        'lblLargestNumber
-        '
-        Me.lblLargestNumber.Location = New System.Drawing.Point(307, 297)
-        Me.lblLargestNumber.Multiline = True
-        Me.lblLargestNumber.Name = "lblLargestNumber"
-        Me.lblLargestNumber.ReadOnly = True
-        Me.lblLargestNumber.Size = New System.Drawing.Size(161, 32)
-        Me.lblLargestNumber.TabIndex = 9
-        Me.lblLargestNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'btnClear
         '
-        Me.btnClear.Location = New System.Drawing.Point(572, 167)
+        Me.btnClear.Location = New System.Drawing.Point(320, 264)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(148, 65)
         Me.btnClear.TabIndex = 10
@@ -142,12 +100,8 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.btnClear)
-        Me.Controls.Add(Me.lblLargestNumber)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnCalculate)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.lblSmallestNumber)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtSecondNumber)
@@ -163,11 +117,7 @@ Partial Class Form1
     Friend WithEvents txtSecondNumber As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents lblSmallestNumber As TextBox
-    Friend WithEvents Label3 As Label
     Friend WithEvents btnCalculate As Button
     Friend WithEvents btnExit As Button
-    Friend WithEvents Label4 As Label
-    Friend WithEvents lblLargestNumber As TextBox
     Friend WithEvents btnClear As Button
 End Class
