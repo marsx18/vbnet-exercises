@@ -1,6 +1,6 @@
 ﻿Public Class Form1
     Private Sub btnCheck_Click(sender As Object, e As EventArgs) Handles btnCheck.Click
-        ' Check the temperature and show the category in a MessageBox
+        ' Check the temperature and show the category 
         Dim temperature As Double
 
         If Double.TryParse(txtTemperature.Text, temperature) Then
@@ -13,18 +13,19 @@
             ElseIf temperature >= 30 Then
                 category = "PANAS"
             End If
-
-            MessageBox.Show("Kategori suhu: " & category, "Keputusan", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            lblCategory.Text = category
         Else
-            ' Display error message if input is not a valid number
-            MessageBox.Show("Sila masukkan suhu yang sah.", "Ralat Input", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            lblCategory.Text = "Sila masukkan suhu yang sah."
         End If
     End Sub
+
+
+
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         ' Clear the input and show in message box
         txtTemperature.Clear()
-        MessageBox.Show("Input telah dibersihkan.", "Makluman", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        lblCategory.Text = ""
     End Sub
 
 

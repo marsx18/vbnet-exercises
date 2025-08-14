@@ -27,11 +27,13 @@ Partial Class Form1
         Me.btnCheck = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
+        Me.lblCategory = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'txtTemperature
         '
-        Me.txtTemperature.Location = New System.Drawing.Point(307, 188)
+        Me.txtTemperature.Location = New System.Drawing.Point(309, 113)
         Me.txtTemperature.Multiline = True
         Me.txtTemperature.Name = "txtTemperature"
         Me.txtTemperature.Size = New System.Drawing.Size(204, 43)
@@ -41,7 +43,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(127, 201)
+        Me.Label1.Location = New System.Drawing.Point(148, 126)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(145, 16)
         Me.Label1.TabIndex = 2
@@ -74,11 +76,32 @@ Partial Class Form1
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
+        'lblCategory
+        '
+        Me.lblCategory.Location = New System.Drawing.Point(309, 182)
+        Me.lblCategory.Multiline = True
+        Me.lblCategory.Name = "lblCategory"
+        Me.lblCategory.ReadOnly = True
+        Me.lblCategory.Size = New System.Drawing.Size(204, 43)
+        Me.lblCategory.TabIndex = 7
+        Me.lblCategory.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(228, 195)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(65, 16)
+        Me.Label2.TabIndex = 8
+        Me.Label2.Text = "Category:"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lblCategory)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnCheck)
@@ -96,4 +119,6 @@ Partial Class Form1
     Friend WithEvents btnCheck As Button
     Friend WithEvents btnClear As Button
     Friend WithEvents btnExit As Button
+    Friend WithEvents lblCategory As TextBox
+    Friend WithEvents Label2 As Label
 End Class
