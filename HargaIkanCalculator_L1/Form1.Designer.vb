@@ -38,8 +38,18 @@ Partial Class Form1
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FILEToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EXITToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PROCESSToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CALCULATEPRICEToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VIEWSUMMARYToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HELPToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ABOUTToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -190,6 +200,67 @@ Partial Class Form1
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FILEToolStripMenuItem, Me.PROCESSToolStripMenuItem, Me.HELPToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(800, 30)
+        Me.MenuStrip1.TabIndex = 13
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FILEToolStripMenuItem
+        '
+        Me.FILEToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NToolStripMenuItem, Me.EXITToolStripMenuItem})
+        Me.FILEToolStripMenuItem.Name = "FILEToolStripMenuItem"
+        Me.FILEToolStripMenuItem.Size = New System.Drawing.Size(49, 24)
+        Me.FILEToolStripMenuItem.Text = "FILE"
+        '
+        'NToolStripMenuItem
+        '
+        Me.NToolStripMenuItem.Name = "NToolStripMenuItem"
+        Me.NToolStripMenuItem.Size = New System.Drawing.Size(207, 26)
+        Me.NToolStripMenuItem.Text = "NEXT CUSTOMER"
+        '
+        'EXITToolStripMenuItem
+        '
+        Me.EXITToolStripMenuItem.Name = "EXITToolStripMenuItem"
+        Me.EXITToolStripMenuItem.Size = New System.Drawing.Size(207, 26)
+        Me.EXITToolStripMenuItem.Text = "EXIT"
+        '
+        'PROCESSToolStripMenuItem
+        '
+        Me.PROCESSToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CALCULATEPRICEToolStripMenuItem, Me.VIEWSUMMARYToolStripMenuItem})
+        Me.PROCESSToolStripMenuItem.Name = "PROCESSToolStripMenuItem"
+        Me.PROCESSToolStripMenuItem.Size = New System.Drawing.Size(84, 24)
+        Me.PROCESSToolStripMenuItem.Text = "PROCESS"
+        '
+        'CALCULATEPRICEToolStripMenuItem
+        '
+        Me.CALCULATEPRICEToolStripMenuItem.Name = "CALCULATEPRICEToolStripMenuItem"
+        Me.CALCULATEPRICEToolStripMenuItem.Size = New System.Drawing.Size(210, 26)
+        Me.CALCULATEPRICEToolStripMenuItem.Text = "CALCULATE PRICE"
+        '
+        'VIEWSUMMARYToolStripMenuItem
+        '
+        Me.VIEWSUMMARYToolStripMenuItem.Name = "VIEWSUMMARYToolStripMenuItem"
+        Me.VIEWSUMMARYToolStripMenuItem.Size = New System.Drawing.Size(210, 26)
+        Me.VIEWSUMMARYToolStripMenuItem.Text = "VIEW SUMMARY"
+        '
+        'HELPToolStripMenuItem
+        '
+        Me.HELPToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ABOUTToolStripMenuItem})
+        Me.HELPToolStripMenuItem.Name = "HELPToolStripMenuItem"
+        Me.HELPToolStripMenuItem.Size = New System.Drawing.Size(57, 24)
+        Me.HELPToolStripMenuItem.Text = "HELP"
+        '
+        'ABOUTToolStripMenuItem
+        '
+        Me.ABOUTToolStripMenuItem.Name = "ABOUTToolStripMenuItem"
+        Me.ABOUTToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.ABOUTToolStripMenuItem.Text = "ABOUT"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -206,12 +277,16 @@ Partial Class Form1
         Me.Controls.Add(Me.txtKembungWeight)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
         Me.Text = "Harga Ikan Calculator"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -233,4 +308,13 @@ Partial Class Form1
     Friend WithEvents btnCalculate As Button
     Friend WithEvents btnExit As Button
     Friend WithEvents btnClear As Button
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents FILEToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EXITToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PROCESSToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CALCULATEPRICEToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents VIEWSUMMARYToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents HELPToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ABOUTToolStripMenuItem As ToolStripMenuItem
 End Class
